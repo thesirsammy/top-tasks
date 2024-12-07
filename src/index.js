@@ -1,11 +1,11 @@
 import "./styles.css";
 
-import {List, Task, Viewport} from "./logic.js"
+import { List, Task, Viewport } from "./logic.js";
 
 (function () {
-    let index = new Viewport();
+  let index = new Viewport();
 
-    index.load();
+  index.load();
 
-    index.refreshIndex();
+  index.refreshIndex();
 })();

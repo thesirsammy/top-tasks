@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <h1>SoupTask</h1>
+      <h1>SoupTask</h1>
     </div>
     <div class="main">
-        <div id="sidebar" class="sidebar">
-            <div id="listbox" class="list-box">
-                <!--
+      <div id="sidebar" class="sidebar">
+        <div id="listbox" class="list-box">
+          <!--
                 <div class="list">
                     <div class="list-content">
                         <h3>List 1</h3>
@@ -20,12 +20,12 @@
                     </div>
                     <div class="list-selected"></div>
                 </div>-->
-            </div>
-            <!--<button>+</button>-->
         </div>
-        <div id="content" class="content">
-            <div id="taskbox" class="task-box">
-            <!--to be removed when refresh() works
+        <!--<button>+</button>-->
+      </div>
+      <div id="content" class="content">
+        <div id="taskbox" class="task-box">
+          <!--to be removed when refresh() works
                 <div class="task">
                     <div class="task-indicator"></div>
                     <h3 class="task-title">take out the trash</h3>
@@ -37,34 +37,39 @@
                         <div>edit</div>
                     </div>
                 </div>-->
-            </div>
-            <!--<button>+</button>-->
         </div>
+        <!--<button>+</button>-->
+      </div>
     </div>
 
     <div id="popup" class="popup hidden">
-        <div class="popup-window">
-            <h1 class="popup-title">Edit List</h1>
-            <form id="popupForm" class="popup-form">
-                <label>Title: </label>
-                <input type="text" id="popupTitle" name="title">
+      <div class="popup-window">
+        <h1 class="popup-title">Edit List</h1>
+        <form id="popupForm" class="popup-form">
+          <label>Title: </label>
+          <input type="text" id="popupTitle" name="title" />
 
-                <label id="popupDueDateLabel" for="taskDueDate">Due Date:</label>
-                <input type="text" id="popupDueDate" name="taskDueDate">
+          <label id="popupDueDateLabel" for="taskDueDate">Due Date:</label>
+          <input type="text" id="popupDueDate" name="taskDueDate" />
 
-                <label id="popupPriorityLabel" for="taskPriority">Priority: </label>
-                <select id="popupPriority" name="taskPriority">
-                    <option value="">None</option>
-                    <option value="!">Low</option>
-                    <option value="!!">Medium</option>
-                    <option value="!!!">High</option>
-                </select>
+          <label id="popupPriorityLabel" for="taskPriority">Priority: </label>
+          <select id="popupPriority" name="taskPriority">
+            <option value="">None</option>
+            <option value="!">Low</option>
+            <option value="!!">Medium</option>
+            <option value="!!!">High</option>
+          </select>
 
-                <label>Notes: </label>
-                <textarea id="popupNotes" name="taskNotes" rows="2" cols="20"></textarea>
-            </form>
-            <button id="popupExit" class="popup-exit">Exit</button>
-        </div>
+          <label>Notes: </label>
+          <textarea
+            id="popupNotes"
+            name="taskNotes"
+            rows="2"
+            cols="20"
+          ></textarea>
+        </form>
+        <button id="popupExit" class="popup-exit">Exit</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
