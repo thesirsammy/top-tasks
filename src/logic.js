@@ -57,7 +57,7 @@ export class Viewport {
 
   refreshIndex() {
     const index = this.index;
-
+    
     const sidebar = document.getElementById("sidebar");
     const listbox = document.getElementById("listbox");
     listbox.innerHTML = "";
